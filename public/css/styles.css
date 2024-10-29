@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #f66a6c, #a2dff7);
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: 
+        linear-gradient(135deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent),
+        linear-gradient(225deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    background-size: 20px 20px;
+    z-index: 0;
+    opacity: 0.1;
+}
+
+.form {
+    height: 100%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: #f66a6c; 
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #f66a6c; 
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid lightblue;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.letter {
+    margin: 0 5px;
+    font-family: poppins;
+}
+
+.login-form {
+    z-index: 99999;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.schedule-form {
+    z-index: 99999;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    width: 80%; 
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+
+.container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    margin: 6% 0;
+}
+
+.menu .col-md-5 {
+    display: flex;
+    min-height: 200px;
+    align-items: center;
+}
+
+.flash-message {
+    transition: opacity 0.5s ease;
+}
+
+.task-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 400px;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    border: 2px solid black;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    background-size: 20px 20px;
+}
+
+.schedule-task {
+    background-color: #fadbd8;
+    background-image: linear-gradient(45deg, rgba(150, 150, 150, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+}
+
+.view-tasks {
+    background-color: #fadbd8;
+    background-image: linear-gradient(45deg, rgba(150, 150, 150, 0.1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 75%, transparent);
+}
+
+.task-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
